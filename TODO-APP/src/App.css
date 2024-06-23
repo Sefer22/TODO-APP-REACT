@@ -18,7 +18,7 @@
 
 .todo-input {
   width: 100%;
-  padding: 10px;
+  padding: 10px 0px;
   border: none;
   border-bottom: 1px solid lightgrey;
   outline: none;
@@ -36,5 +36,6 @@
 
 .todo-icons {
   font-size: 20px;
-
+  margin-right: 7px;
+  cursor: pointer;
 }

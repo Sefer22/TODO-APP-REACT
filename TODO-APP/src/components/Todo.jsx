@@ -7,7 +7,7 @@ function Todo() {
     return (
         <div style={{
             display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between',
-            border: '1px solid lightgrey'
+            border: '1px solid lightgrey', padding: '10px'
         }}>
             <div>
                 I am first TODO
