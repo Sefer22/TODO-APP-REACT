@@ -4,7 +4,7 @@ import { FaEdit } from "react-icons/fa";
 import '../App.css';
 import { FaCheck } from "react-icons/fa";
 
-function Todo({ todo, onRemoveTodo }) {
+function Todo({ todo, onRemoveTodo, onUpdateTodo }) {
 
     const { id, content } = todo;
 
@@ -16,7 +16,12 @@ function Todo({ todo, onRemoveTodo }) {
     }
 
     const updateTodo = () => {
-
+        const request = {
+            id: id,
+            content: newTodo
+        }
+        onUpdateTodo(request);
+        setEditable(false);
     }
 
     return (
