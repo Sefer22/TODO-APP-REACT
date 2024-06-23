@@ -5,8 +5,10 @@ import TodoCreate from './components/TodoCreate'
 function App() {
 
   return (
-    <div>
-      <TodoCreate />
+    <div className='App'>
+      <div style={{ width: '100%' }}>
+        <TodoCreate />
+      </div>
     </div>
   )
 }
