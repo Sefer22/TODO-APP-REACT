@@ -11,6 +11,11 @@ function App() {
     setTodos([...todos, newTodo]);
   }
 
+  const removeTodo = (todoId) => {
+    const extractedArray = todos.filter((todo) => todo.id !== todoId);
+    console.log(extractedArray);
+  }
+
   console.log(todos);
 
   return (
