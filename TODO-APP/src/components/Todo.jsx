@@ -4,7 +4,7 @@ import { FaEdit } from "react-icons/fa";
 
 function Todo() {
     return (
-        <div>
+        <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
             <div>
                 I am first TODO
             </div>
