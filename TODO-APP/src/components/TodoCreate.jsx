@@ -5,7 +5,7 @@ function TodoCreate() {
     return (
         <div className='todo-create'>
             <input className='todo-input' type="text" placeholder='Enter TODO' />
-            <button>Enter TODO</button>
+            <button className='todo-button'>Enter TODO</button>
         </div>
     )
 }
