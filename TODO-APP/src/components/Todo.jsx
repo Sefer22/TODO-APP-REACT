@@ -9,6 +9,7 @@ function Todo({ todo, onRemoveTodo }) {
     const { id, content } = todo;
 
     const [editable, setEditable] = useState(false);
+    const [newTodo, setNewTodo] = useState(content);
 
     const removeTodo = () => {
         onRemoveTodo(id);
@@ -21,7 +22,7 @@ function Todo({ todo, onRemoveTodo }) {
         }}>
             <div>
                 {
-                    editable ? <input className='todo-input' type="text" /> : content
+                    editable ? <input value={newTodo} onChange={(e) => setNewTodo(e.target.value)} className='todo-input' type="text" /> : content
                 }
             </div>
             <div>
