@@ -6,7 +6,7 @@ function App() {
 
   return (
     <div className='App'>
-      <div style={{ width: '100%' }}>
+      <div style={{ width: '500px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
         <TodoCreate />
       </div>
     </div>
