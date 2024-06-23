@@ -15,6 +15,14 @@ function App() {
     setTodos([...todos.filter((todo) => todo.id !== todoId)]);
   }
 
+  const updateTodo = (newTodo) => {
+    todos.map((todo) => {
+      if (todo.id !== newTodo.id) {
+        return todo;
+      }
+      return newTodo;
+    })
+  }
   console.log(todos);
 
   return (

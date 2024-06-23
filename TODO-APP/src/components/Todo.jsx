@@ -15,6 +15,10 @@ function Todo({ todo, onRemoveTodo }) {
         onRemoveTodo(id);
     }
 
+    const updateTodo = () => {
+
+    }
+
     return (
         <div style={{
             display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between',
@@ -22,13 +26,17 @@ function Todo({ todo, onRemoveTodo }) {
         }}>
             <div>
                 {
-                    editable ? <input value={newTodo} onChange={(e) => setNewTodo(e.target.value)} className='todo-input' type="text" /> : content
+                    editable ? <input value={newTodo} onChange={(e) => setNewTodo(e.target.value)}
+                        style={{ width: '380px' }}
+                        className='todo-input' type="text" /> : content
                 }
             </div>
             <div>
                 <IoIosRemoveCircle className='todo-icons' onClick={removeTodo} />
                 {
-                    editable ? <FaCheck className='todo-icons' /> : <FaEdit className='todo-icons' onClick={() => setEditable(true)} />
+                    editable ? <FaCheck className='todo-icons' onClick={updateTodo} />
+
+                        : <FaEdit className='todo-icons' onClick={() => setEditable(true)} />
                 }
 
             </div>
