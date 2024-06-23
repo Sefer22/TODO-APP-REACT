@@ -11,6 +11,8 @@ function App() {
     setTodos([...todos, newTodo]);
   }
 
+  console.log(todos);
+
   return (
     <div className='App'>
       <div className='main'>
